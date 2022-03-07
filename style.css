@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=El+Messiri:wght@600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --dark:#350363;
+    --background:#ffe9db;
+}
+html{
+    font-size: 62.5%;
+    font-family: sans-serif;
+}
+body{
+    width: 100vh;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    background-color: #350363;
+}
+main{
+    width: 30vw;
+    text-align: center;
+    background-color: #ffe9db;
+    border: solid #350363;
+    border-width: 0.8rem;
+    border-radius: 1rem;
+    padding: 8rem 5rem;
+    color: #1f291f;
+    box-shadow: 10px 5px 5px rgb(149, 151, 155);
+}
+h2{
+    font-size: 2.2rem;
+    margin: 2rem;
+}
+h3{
+    font-size: 3rem;
+}
+p{
+    font-size: 1.8rem;
+}
+img{
+    width: 500px;
+    max-height: 500px;
+    height: auto;
+    
+}
+.button-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 4rem;
+    margin-bottom: 2rem;
+
+}
+button{
+    min-width:28rem;
+    background-image: linear-gradient(
+        92.88deg,
+        #455eb5 9.16%,
+        #5643cc 43.89%,
+        #673fd7 64.72%
+    );
+    border-radius: 8px;
+    border-style: none;
+    /* box-sizing: border-box; */
+    color: #ffffff;
+    cursor: pointer;
+    padding: 2.5rem 6rem;
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    text-shadow: rgba(0, 0, 0,0.25) 0 3px 8px;
+    transition: all 0.5s;
+    user-select: none;
+    -webkit-user-select: none;
+    text-transform: capitalize;
+    font-family: "josefin sans",sans-serif;
+}
+button:hover{
+    box-shadow: rgba(80, 63, 205, 0.2) 0 1px 30px;
+    transition-duration: 0.1s;
+}
+button:last-child{
+    background:var(--dark);
+    margin-bottom: 0;
+}
+
+/* ********************************************************
+game area
+********************************************************* */
+#gameArea{
+    /* height: 35vh; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#newgameButton button{
+    margin: 2rem 0;
+}
+input{
+    border: 0.1rem solid lightgray;
+    background: transparent;
+    margin: 4rem 0;
+    padding: 2rem 0;
+    width: 25rem;
+    text-align: center;
+    font-family:"josefin sans",sans-serif;
+}
+.stats{
+    text-align: center;
+    margin-bottom: 4rem;
+}
+.info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+}
+.info span{
+    font-size: 2rem;
+    color: red;
+}
+/* ****************************************************** *
+for responsive
+****************************************************/
+@media(max-width:1200px){
+    body{
+        width: 100vw;
+    }
+    main{
+        width: 50vw;
+        padding: 2rem;
+    }
+    input{
+        width: 20rem;
+    }
+
+}
+@media(max-width:800px){
+    body{
+        width: 80vw;
+
+    }
+
+    main{
+        width: 80vw;
+        padding: 2rem;
+    }
+    
+    #welcomeScreen h2{
+        text-transform: capitalize;
+        font-size: 2rem;
+    }
+}
